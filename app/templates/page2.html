@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h1 class = "text-center text-white bg-dark"> My 5 favorite animes</h1>
+
+{%endblock content%}
+
+{%block hero_img%}
+
+<div class= 'row justify-content-center'>
+    <div class=" col-3 bg-warning text-dark text-center">
+        {%for fav in favs%}
+            {%if fav == 'Naruto'%}
+                <h1>#1 {{fav}}</h1>
+            {%endif%}
+        {%endfor%}
+    </div>
+</div>
+<div class= 'row justify-content-center'>
+    <div class=" col-3 bg-dark text-white text-center">
+    {%for fav in favs%}
+        {%if fav == 'Full Metal Alchemist'%}
+            <h1>#2 {{fav}}</h1>
+        {%endif%}
+    {%endfor%}
+    </div>
+</div>
+<div class= 'row justify-content-center'>
+    <div class=" col-3 bg-dark text-danger text-center">
+    {%for fav in favs%}
+        {%if fav == 'Death Note'%}
+            <h1>#3 {{fav}}</h1>
+        {%endif%}
+    {%endfor%}
+    </div>
+</div>
+<div class= 'row justify-content-center'>
+    <div class=" col-3 bg-primary text-white text-center">
+    {%for fav in favs%}
+        {%if fav == 'One Piece'%}
+            <h1>#4 {{fav}}</h1>
+        {%endif%}
+    {%endfor%}
+    </div>
+</div>
+<div class= 'row justify-content-center'>
+    <div class=" col-3 bg-danger text-dark text-center">
+    {%for fav in favs%}
+        {%if fav == 'Black Clover'%}
+            <h1>#5 {{fav}}</h1>
+        {%endif%}
+    {%endfor%}
+    </div>
+</div>
+
+{%endblock hero_img%}
+
